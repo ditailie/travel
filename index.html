@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel</title>
+  </head>
+  <body>
+    <!--***main container starts***-->
+    <section class="hero">
+      <!--***navbar starts***-->
+      <nav class="navbar">
+        <div class="logo">
+          <i class="fa-solid fa-plane-departure"></i>
+          <h1>Travel</h1>
+        </div>
+
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Tours</a></li>
+          <li><a href="#">Destinations</a></li>
+        </ul>
+
+        <div class="search-box">
+          <input type="text" class="input-box" placeholder="Search..." />
+          <span class="search-btn">
+            <i class="fa-solid fa-search"></i>
+          </span>
+        </div>
+
+        <div class="menu-btn">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+      <!--***navbar ends***-->
+
+      <!--***hero body starts ***-->
+    <div class="hero-text">
+        <h2>Escape from your daily life</h2>
+        <h1>Find yourself outside</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, voluptatum iure fugit eos,
+          exerci.
+        </p>
+        <button>View Tours</button>
+        <div class="social-media-icons">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+    </div>
+
+    <div class="hero-image">
+       <img src="image3.jpg">
+    </div>
+      <!--***hero body ends ***-->
+    </section>
+    <!--***main container ends**-->
+
+    <script type="text/javascript">
+        var menuBtn = document.querySelector('.menu-btn');
+        var menu= document.querySelector('.nav-links');
+
+
+      menuBtn.addEventListener('click', activeClass);
+
+      function activeClass(){
+        menuBtn.classList.toggle('active');
+        menu.classList.toogle('active');
+      }
+    </script>
+  </body>
+</html>
